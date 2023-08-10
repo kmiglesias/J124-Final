@@ -48,7 +48,7 @@ Note: Before any questions were completed, the downloaded spreadsheet was filter
 
 ## 1. Which Oakland zip code has the highest amount of diesel particulate matter emissions (tons/year)? Which zip code has the least?
 #### 94607 has the highest amount of diesel particulate matter emissions, while 94613 has the least.
-<img width="223" alt="Screen Shot 2023-08-09 at 11 40 25 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/ca562a47-4483-4133-9bdb-eace732ce18c">
+![/J124_Ques1Answer.png)](https://github.com/kmiglesias/J124-Final/blob/main/J124_Ques1Answer.png)
 
 
 #### Process
@@ -65,26 +65,29 @@ Note: Before any questions were completed, the downloaded spreadsheet was filter
 1. Using the pivot table from Question 1, copy and paste the top and bottom values (which should be for the zip codes 94607 and 94613) into a new sheet.
 2. In a new column, calculate the percent difference between the two diesel PM values using the formula “=(ABS(B2-B3))/((B2+B3)/2).”
 3. Clicking the new value that results from that formula, click “Format,” then “Number,” and finally, “Percent.”
-<img width="605" alt="Screen Shot 2023-08-09 at 11 45 18 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/44ec21a7-df8a-455c-b6c5-506f1c0b8879">
+![J124_Q2Process.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q2Process.png)
 
 ## 3. What is the percentage of people of color in the zip codes with the highest and lowest amount of diesel particulate matter emissions?
 #### 74.29% of people in 94607 are people of color. 68.84% are people of color in 94613.
 
 #### Process
 1. Copy the first 5 columns (Census Tract, Total Population, California County, ZIP, and Approximate Location) from “Oakland Filtered” to a new sheet. 
-<img width="392" alt="Screen Shot 2023-08-09 at 11 47 09 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/4654a388-2819-4ff6-8269-3de40d14e064">
+![J124_Q3P1.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q3P1.png)
 
 2. In the new sheet, use the formula “=VLOOKUP(A2, 'Demographic Profile'!$A$4:$O$363, 11, FALSE)” in a new column in the second cell (F2). This connects the new sheet to the sheet called “Demographic Profile” that comes with the original downloaded dataset. Double-click the corner of the cell to fill the rest of the column. This new column returns the percentage of white people per census tract.
-<img width="1305" alt="Screen Shot 2023-08-09 at 11 48 46 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/7c28dd73-bec4-4e8a-b7a2-aec9a302b387">
+
+![J124_Q3P2.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q3P2.png)
 
 3. Label the VLOOKUP column “% White.” For the next column, write the formula “100-F:F). That returns the percentage of non-white people or people of color. Note: The category of “Other/Multiple” was included as people of color because the database dictionary definites the category as “2019 ACS population estimates of the percent per census tract of those who identify as non-Hispanic ‘other’ or as multiple races.”
-<img width="937" alt="Screen Shot 2023-08-09 at 11 49 33 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/3fa67159-88c7-4574-9c52-f1223e8e3796">
+
+![J124_Q3P3.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q3P3.png)
 
 4. Create a pivot table using this sheet. Use “ZIP” for the rows and “%BIPOC” for the values. For the values, summarize by “AVERAGE.” Optional for curiosity purposes: Order by descending values, and sort by the “AVERAGE of %BIPOC” for the “ZIP” box to see which zip codes have the largest and smallest BIPOC populations.
-<img width="313" alt="Screen Shot 2023-08-09 at 11 50 08 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/fd4d4862-f6b4-4722-af5b-0a14a4f9c2f6">
+
+![J124_Q3P4.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q3P4.png)
 
 5. Going back to Question 1, the zip code 94607 has the highest amount of diesel particulate matter emissions, while 94613 has the least. The zip code 94618 has the second lowest amount of diesel particulate matter emissions. This zip code was included because 94613 is a very small zip code area mainly encompassing the Mills College campus, which may be an outlier in the dataset. Filter the pivot table to show only 94607, 94613, and 94618.
-<img width="747" alt="Screen Shot 2023-08-09 at 11 51 01 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/98ce5e21-ef42-496f-afba-065e45b26797">
+![J124_Q3P5.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q3P5.png)
 
 ## 4. Which census tract and zip code has the highest age-adjusted rate of emergency department visits for asthma? 
 #### Census tract 6001410300/zip code 94603 has the highest age-adjusted rate of emergency department visits for asthma at 226.34.
@@ -94,10 +97,10 @@ Note: Before any questions were completed, the downloaded spreadsheet was filter
 2. Use “Census Tract” and “ZIP” for the rows.
 3. Use “Asthma” for the values.
 4. Order the census tract in descending order and sort by the “SUM of Asthma.”
-<img width="487" alt="Screen Shot 2023-08-09 at 11 53 48 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/bea08872-72b9-4a86-b981-46a35ab4aff6">
+![J124_Q4.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q4.png)
 
 5. Optional: See the data by zip code by looking at the average.
-<img width="412" alt="Screen Shot 2023-08-09 at 11 54 33 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/ec5c4736-8583-423f-9e79-430f5dbf370c">
+![J124_Q4Optional.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q4Optional.png)
 
 ## 5. Which census tract and zip code has the highest age-adjusted rate of emergency department visits for heart attacks (per 10,000)?
 #### Census tract 6001409500/zip code 94621 had the highest age-adjusted rate of emergency department visits for heart attacks at 21 per 10,000.
@@ -107,13 +110,13 @@ Note: Before any questions were completed, the downloaded spreadsheet was filter
 2. Use “Census Tract” and “ZIP” for the rows.
 3. Use “Cardiovascular Disease” for the values.
 4. Order the census tract in descending order and sort by the “SUM of Cardiovascular Disease.”
-<img width="521" alt="Screen Shot 2023-08-09 at 11 56 13 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/7ce741c6-bbe9-4aa7-b36e-c7c3675c9f94">
+![J124_Q5.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q5.png)
 
 5. Optional: See the data by zip code by looking at the average.
-<img width="468" alt="Screen Shot 2023-08-09 at 11 57 04 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/587eb560-45ad-4c29-bb15-6aa35b2ec784">
+![J124_Q5Optional.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q5Optional.png)
 
 ## 6. What is the average percent of the population living below two times the federal poverty level for each zip code?
-<img width="388" alt="Screen Shot 2023-08-09 at 11 57 37 PM" src="https://github.com/kmiglesias/J124-Final/assets/140004469/c913959c-c755-43d5-ac93-a31ce44f869c">
+![J124_Q6.png](https://github.com/kmiglesias/J124-Final/blob/main/J124_Q6.png)
 
 #### Process
 1. Create a pivot table from “Oakland Filtered.”
